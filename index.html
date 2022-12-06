@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match History Form</title>
+    <style>
+        h2 {font-size: 125%;}
+        h3 {font-size: 125%;}
+        h4 {font-size: 125%;}
+        h5 {font-size: 125%;} 
+       
+        header {
+            border: 2px solid black;
+            background-color: grey;
+            padding: 10px;
+            text-align: center;
+            color: white; 
+            border-radius: 20px;
+            margin-left: 300px;
+            margin-right: 300px;
+            
+        }
+        body {
+            text-align: center;
+            background-image: url(https://jiujitsutimes.com/wp-content/uploads/buchecha-vs-lovato.jpg);
+            background-repeat: no-repeat; 
+            background-size: cover;
+        }
+
+        section {
+            border: 2px solid black;
+            background-color: grey;
+            color: black;
+            padding: 10px;
+            margin-left: 400px;
+            margin-right: 400px;
+            border-radius: 20px;
+            font-size: 110%;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+        }
+
+        button:hover {
+            background: red;
+            color: white;
+        }
+  
+    </style>
+</head>
+<body>
+    <header>
+    <h1 class="title">Match and Personal History Form</h1>
+    <form action="" method="POST">
+
+    </header>
+
+    <br />
+
+    <section>
+
+        <label for="fname">First name</label><br>
+        <input type="text" id="fname" placeholder="First Name"><br>
+        <label for="lname">Last name</label><br>
+        <input type="text" id="lname" placeholder="Last Name"><br>
+
+        <br />
+        
+        <label for="sex">Sex</label><br>
+        <select id="sex">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+
+        <br />
+        <br />
+
+        <label for="age">Age</label><br>
+        <select id="age">
+            <option>Adult</option>
+            <option>Teen</option>
+            <option>Youth</option>
+        </select>
+
+          <br />
+          <br />
+
+        <label for="division">Division</label><br>
+        <select id="division">
+            <option>Gi</option>
+            <option>No Gi</option>
+        </select>
+
+        <br />
+        <br />
+
+        <label for="rank">Rank</label><br>
+        <select id="rank">
+            <option class="rank1">white</option>
+            <option class="rank2">Blue</option>
+            <option>Purple</option>
+            <option>Brown</option>
+            <option>Black</option>
+        </select>
+
+        <br />
+        <br />
+
+        <label for="match-outcome">Match Outcome</label><br>
+        <select id="match-outcome">
+            <option>Win Via Submission</option>
+            <option>Win Via Points</option>
+            <option>Win Via Ref Decision</option>
+            <option>Lost Match</option>
+        </select><br>
+        
+        <br /> 
+
+
+        <button type="button">Submit</button><br>
+        </section>
+    </form>
+    
+</body>
+</html>
