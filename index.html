@@ -8,35 +8,36 @@
     <style>
         body {
             font-family: sans-serif;
+            background-color: #181818;
         }
 
         .section1 {
-            border: 3px solid black;
+            border: 3px solid white;
             border-right: 3px solid black;
             box-sizing: border-box;
             height: 750px;
             margin: 20px;
             position: relative;
-            background:whitesmoke;
+            background:#181818;
         }
 
         form {
             text-align: center;
-            /* border: 3px solid black; */
             border-radius: 20px;
             width: 300px;
             height: 350px;
             position: absolute;
-            top: 100px;
+            top: 130px;
             left: 60px;
             padding: 20px;
             background-color: transparent;
-             /* backdrop-filter: blur(5px); */
+            
         }
 
         label {
             display: block;
             padding: 10px;
+            color: white;
         }
 
         .input {
@@ -62,7 +63,7 @@
             float: right;
             width: 70%;
             box-sizing: border-box;
-            border: 1px solid black;
+            border-right: 3px solid white;
             height: 100%;
             background-image: url(https://scontent.fyqm1-1.fna.fbcdn.net/v/t1.6435-9/36062858_10160421142390403_1772912781247381504_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=ad2b24&_nc_ohc=Op4dSaGU3CMAX9QWD7Z&_nc_ht=scontent.fyqm1-1.fna&oh=00_AfAVMqKtlulIov1vc7ViyP150fGHBdicWCmfTwwdUWOIDw&oe=63BDF966);
             background-size: cover;
@@ -76,6 +77,7 @@
             box-sizing: border-box;
             padding: 10px;
             margin-top: 0px;
+            color: whitesmoke;
         }
 
         p {
@@ -83,11 +85,12 @@
             left: 10px;
             bottom: 5px;
             text-align: center;
+            color: white;
         }
 
         legend {
             padding: 0.2em 0.5em;
-            color: gray;
+            color: white;
             font-size: 90%;
             position: relative;
             margin-left: auto;
@@ -99,7 +102,7 @@
             position: absolute;
             content: '';
             height: 8px;
-            border-left: 1px solid grey;
+            border-left: 1px solid white;
             left: 0px;
             top: 7px;
         }
@@ -108,13 +111,13 @@
             position: absolute;
             content: '';
             height: 8px;
-            border-right: 1px solid gray;
+            border-right: 1px solid white;
             right: 0px;
             top: 7px;
         }
 
         fieldset {
-            border: 3px solid black;
+            border: 3px solid white;
             border-radius: 10px;
             backdrop-filter: blur(5px);
         }
@@ -129,7 +132,7 @@
             backdrop-filter: blur(3px);
             border-collapse: collapse;
         } */
-        th, td {
+       /* th, td {
             padding: 7px 10px 10px 10px;
             border: 1px solid black;
         }
@@ -151,14 +154,43 @@
 
         .rank {
             text-align: center;
+        } */
+        nav {
+            position: absolute;
+            left: 80px;
+            top: 60px;
+            color: #1e90ff;
+           /* border-bottom: 1px solid grey; */
+            margin-top: 10px;
+           /* border-top: 1px solid grey; */
+            text-align: :left;
+        
         }
+        
+        a {
+            padding: 10px;
+            color: #1e90ff;
+        }
+        a:hover {
+            color: blue;
+            cursor: pointer;
+        }
+       
+     
     </style>
 </head>
 <body>
     <section class="section1">
 
         <h1>Module 1 Project - Ranking System</h1>
-       
+        
+        <nav>
+            <ul id="form-nav">
+                <a href="./GiRanking.html">Gi</a>
+                <a href="./NoGiRanking.html">No Gi</a>
+            </ul>
+        </nav>
+
         <p>Patrick Caines</p>
 
         <aside> 
@@ -225,6 +257,7 @@
     
     
             </table> --> 
+            
             
         
         </aside>
