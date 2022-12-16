@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    
     <style>
         body {
             font-family: sans-serif;
@@ -12,8 +13,9 @@
         }
 
         .section1 {
-            border: 3px solid white;
-            border-right: 3px solid black;
+            border-top: 3px solid white;
+            border-right: 3px solid white;
+            border-left: 3px solid white;
             box-sizing: border-box;
             height: 750px;
             margin: 20px;
@@ -61,7 +63,7 @@
 
         aside {
             float: right;
-            width: 70%;
+            min-width: 70%;
             box-sizing: border-box;
             border-right: 3px solid white;
             height: 100%;
@@ -70,7 +72,7 @@
             background-repeat: no-repeat;
         }
 
-        h1 {
+        #form-header {
             float: left;
             max-width: 30%;
             text-align: center;
@@ -116,45 +118,13 @@
             top: 7px;
         }
 
-        fieldset {
+        #main-fieldset {
             border: 3px solid white;
             border-radius: 10px;
             backdrop-filter: blur(5px);
         }
 
-       /* table {
-            position: absolute;
-            top: 100px;
-            right: 50px;
-            width: 600px;
-            box-sizing: border-box;
-            border: 2px solid black;
-            backdrop-filter: blur(3px);
-            border-collapse: collapse;
-        } */
-       /* th, td {
-            padding: 7px 10px 10px 10px;
-            border: 1px solid black;
-        }
 
-        th {
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            font-size: 90%;
-            border-bottom: 2px solid black;
-            border-top: 1px solid grey;
-            text-align: left;
-        }
-        tr:nth-child(even){
-            background-color: #efefef;
-        }
-        tr:nth-child(odd) {
-            background-color: #c3e6e5;
-        }
-
-        .rank {
-            text-align: center;
-        } */
         nav {
             position: absolute;
             left: 80px;
@@ -175,14 +145,21 @@
             color: blue;
             cursor: pointer;
         }
-       
+       #ranking-header {
+        color: white;
+        text-align: center;
+       }
+
+       .ranking-tables {
+        border: 1px solid whitesmoke;
+       }
      
     </style>
 </head>
 <body>
     <section class="section1">
 
-        <h1>Module 1 Project - Ranking System</h1>
+        <h1 id="form-header">Module 1 Project - Ranking System</h1>
         
         <nav>
             <ul id="form-nav">
@@ -194,76 +171,12 @@
         <p>Patrick Caines</p>
 
         <aside> 
-           <!-- <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Points</th>
-                    <th>Rank</th>
-                </tr>
-                    <td></td>
-                    <td></td>
-                    <td class="rank">1</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td class="rank">2</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td class="rank">3</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td class="rank">4</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td class="rank">5</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td class="rank">5</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td class="rank">6</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td class="rank">7</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td class="rank">8</td>
-                <tr>
-                    <td></td>
-                    <td></td>
-                     <td class="rank">9</td>
-                </tr>
-                <tr>
-                    <td></td>      
-                    <td></td>
-                    <td class="rank">10</td>
-                </tr>
-                </tr>
-    
-    
-            </table> --> 
-            
-            
+        
         
         </aside>
 
         <form>
-            <fieldset>
+            <fieldset id="main-fieldset">
             <legend>Personal / Match Information</legend>
             <label for="fname">First Name</label>
             <input class="input" type="text" id="fname" placeholder="first-name">
@@ -298,6 +211,11 @@
         </fornm>
 
     </section>
+
+    <div class="ranking-tables">
+        <h1 id="ranking-header">Rankings</h1>
+
+    </div>
     
 </body>
 </html>
