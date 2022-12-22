@@ -35,8 +35,8 @@
         .table-title {
             text-align: center;
         }
-       
-
+      
+        
         header,
         footer,
         main,
@@ -46,7 +46,6 @@
             color: white;
             padding: 20px;
             border: 1px solid grey;
-            position: relative;
             overflow-x: hidden;
             }
         
@@ -98,30 +97,37 @@
         .my-github:hover {
             color: steelblue;
         }
-      
        
        .male-gi {
         overflow-y: scroll;
-        
         height: 250px;
+        width: 100%;
         
        }
        .female-gi {
         overflow-y: scroll;
         height: 250px;
+        width: 100%;
       
        }
        .male-nogi {
         overflow-y: scroll;
         height: 250px;
+        width: 100%;
        }
        .female-nogi {
         overflow-y: scroll;
         height: 250px;
+        width: 100%;
       
        } 
+       .my-div {
+        
+       }
+       h4 {
+        padding: 10px;
+       }
     
-       
        .form-container {
         margin-top: 100px;
        }
@@ -132,7 +138,7 @@
         align-items: center;
         align-content: space-between;
        }
-      
+    
     </style>
 </head>
 <body>
@@ -172,8 +178,6 @@
                 <option>Lost Match</option>
             </select>
         
-            
-
             <br />
 
             <input class="input" type="submit" id="submit-button" value="submit">
@@ -181,14 +185,14 @@
         </form>
         </div>
 
-
     </main>
     <section class="flex-container"> 
-
+        <div class="my-div container-md col-8 text-center">
+          <h4 class="text-center">Male Gi</h4>
         <div class="container-md col-8 male-gi">
         <table class="table table-dark table-striped table-responsive">
             <thead>
-              <tr>
+              <tr class="table-headers">
                 <th scope="col">#</th>
                 <th scope="col">First</th>
                 <th scope="col">Last</th>
@@ -259,7 +263,10 @@
             </tbody>
           </table>
           </div>
-
+          </div>
+          
+          <div class="my-div container-md col-8">
+            <h4 class="text-center">Female Gi</h4>
         <div class="container-md col-8 female-gi">
             <table class="table table-dark table-striped table-responsive">
                 <thead>
@@ -334,7 +341,10 @@
                 </tbody>
               </table>
               </div>
+              </div>
 
+              <div class="my-div container-md col-8">
+                <h4 class="text-center">Male No-Gi</h4>
               <div class="container-md col-8 male-nogi">
                 <table class="table table-dark table-striped table-responsive">
                     <thead>
@@ -409,7 +419,10 @@
                     </tbody>
                   </table>
                 </div>
+                </div>
 
+                  <div class="my-div container-md col-8">
+                    <h4 class="text-center">Female No-Gi</h4>
                   <div class="container-md col-8 female-nogi">
                     <table class="table table-dark table-striped table-responsive">
                         <thead>
@@ -484,6 +497,7 @@
                         </tbody>
                       </table>
                       </div> 
+                      </div>
                       
         
         
